@@ -1,0 +1,29 @@
+<html>
+    <head> <title> Programação e Algoritmo Java Script !</title>
+    <meta charset="utf-8"> 
+    </head>
+    <body style="font-size: 60px; text-align: center; font-family: Arial, Helvetica, sans-serif; background-color: #f0f0f0;">
+        
+<script type="text/javascript">
+
+    var KwH // real
+    var ICMS //0.18 - real
+    var PIS //0.03 - real
+    var CM // Consumo mensal - real
+    var CO // COFINS - real
+    var VAL // Valor pago - real
+
+    KwH = parseFloat(prompt("Digite o total de KwH gasto: "))
+    CM = parseFloat(KwH * 0.86)
+    ICMS = parseFloat(CM * 0.18)
+    PIS = parseFloat(CM * 0.03)
+    CO = parseFloat(CM * 0.02)
+    VAL = (CO + ICMS + PIS + CO + 29.98)
+
+    document.write("Valor a pagar: R$" + VAL + "<BR> Valor do ICMS: R$" + ICMS +
+ "<BR> Valor do COFINS: R$" + CO + "<BR> Valor do PIS/PASEP: R$" + PIS + "<BR> Valor do CIP: R$29,98")
+
+</script>
+
+    </body>
+</html>
